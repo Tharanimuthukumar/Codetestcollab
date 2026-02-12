@@ -5,10 +5,10 @@ FROM openjdk:21
 WORKDIR /app
 
 # Copy all files into the container
-COPY . /app
+COPY  Addtwonum.java
 
 # Compile the Java program
-RUN javac AddTwoNumbers.java
+RUN javac Addtwonum.java
 
 # Run the program
-CMD ["java", "AddTwoNumbers"]
+CMD ["java", "Addtwonum"]
