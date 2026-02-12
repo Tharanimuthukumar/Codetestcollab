@@ -1,9 +1,5 @@
-FROM openjdk:17
-
+FROM openjdk:20   # or 17 if available
 WORKDIR /app
-
-COPY Addtwonum.java /app/
-
-RUN javac Addtwonum.java
-
-CMD ["java", "Addtwonum"]
+COPY . /app
+RUN javac AddTwoNumbers.java
+CMD ["java", "AddTwoNumbers"]
