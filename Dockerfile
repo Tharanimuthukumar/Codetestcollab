@@ -5,7 +5,7 @@ FROM openjdk:21
 WORKDIR /app
 
 # Copy all files into the container
-COPY  Addtwonum.java
+COPY  Addtwonum.java /app/
 
 # Compile the Java program
 RUN javac Addtwonum.java
